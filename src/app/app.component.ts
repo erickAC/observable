@@ -8,9 +8,13 @@ import { SpinnerService } from './spinner/spinner.service';
   standalone: true,
   imports: [RouterOutlet, SpinnerComponent],
   template: `
+  <div  style="height: 100vh ;" class="d-flex flex-column justify-content-center align-items-center">
     <app-spinnner />
-    <button (click)="show()">Exibir</button>
-    <button (click)="hide()">Ocultar</button>
+    <div>
+      <button class="btn" (click)="show()">Exibir</button>
+      <button class="btn" (click)="hide()">Ocultar</button>
+    </div>
+  </div>
   `,
   styleUrl: './app.component.css'
 })

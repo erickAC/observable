@@ -7,7 +7,9 @@ import { Subject } from "rxjs";
     standalone: true,   
     template: `
     @if (exibir) {
-        <span>Carregando...</span>
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     }
     
     `
